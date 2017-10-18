@@ -21,7 +21,7 @@ nav.side_bar {
   flex-wrap: wrap;
   justify-content: flex-start;
 
-  width: 11vw;
+  width: 5.8rem;
   height: 100vh;
 }
 /*Logo*/
@@ -30,29 +30,75 @@ nav.side_bar > div.logo {
   margin: 0;
   padding: 0;
   outline: 0;
-  height: 11vh;
+  height: 10vh;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 nav.side_bar > div.logo > img {
-    height: 70%;
+    height: 65%;
 }
 /*Color Option*/
-nav.side_bar > ul {
+nav.side_bar > ul.nav_choose_color {
   list-style: none;
   list-style-image: none;
   margin: 0;
   padding: 0;
   outline: 0;
   height: 60vh;
-  justify-content: space-between;
-  display: flex;
   background-color: blue;
+
+  display: flex;
+  align-items: center;
+	flex-direction: column;
+  justify-content: space-around;
 }
-nav.side_bar > ul > li {
-  width: 10px;
-  height: 10px;
+nav.side_bar > ul.nav_choose_color li {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 25%;
   background-color: red;
+}
+/*Nav Option*/
+nav.side_bar > ul.nav_choose_pen {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  height: 30vh;
+  background-color: grey;
+
+  display: flex;
+  align-items: center;
+	flex-direction: column;
+  justify-content: space-around;
+}
+nav.side_bar > ul.nav_choose_pen li {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 25%;
+  background-color: red;
+}
+
+
+/*//// PAINT ZONE ////*/
+section.paint_div
+{
+    padding: 0 0 0 5.8rem;
+}
+section.paint_div > div.paint_line {
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+}
+
+section.paint_div > div.paint_line  div {
+
+}
+
+section.paint_div > div.paint_line  div:hover {
+  background-color: red!important;
 }
