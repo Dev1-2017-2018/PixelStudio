@@ -8,13 +8,21 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
+li {
+cursor:pointer
+
+}
 
 /*//// SIDE BAR ////*/
 nav.side_bar {
   position: absolute;
   z-index: 10;
-  background: #5e5e5e;
+  background: grey;
   padding: 0 0 0 0;
+
+  -webkit-box-shadow: 0 0px 16px 6px rgba(63, 81, 181, 0.55);
+  -moz-box-shadow: 0 0px 16px 6px rgba(63, 81, 181, 0.55);
+  box-shadow: 0 0px 16px 6px rgba(63, 81, 181, 0.55);
 
   display: flex;
   flex-direction: column;
@@ -26,18 +34,18 @@ nav.side_bar {
 }
 /*Logo*/
 nav.side_bar > div.logo {
-  background-color: red;
+  background-color: #5E35B1;
   margin: 0;
   padding: 0;
   outline: 0;
-  height: 10vh;
+  height: 12vh;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 nav.side_bar > div.logo > img {
-    height: 65%;
+    height: 70%;
 }
 /*Color Option*/
 nav.side_bar > ul.nav_choose_color {
@@ -46,8 +54,8 @@ nav.side_bar > ul.nav_choose_color {
   margin: 0;
   padding: 0;
   outline: 0;
-  height: 60vh;
-  background-color: blue;
+  height: 59vh;
+  background-color: #3F51B5;
 
   display: flex;
   align-items: center;
@@ -67,8 +75,8 @@ nav.side_bar > ul.nav_choose_pen {
   margin: 0;
   padding: 0;
   outline: 0;
-  height: 30vh;
-  background-color: grey;
+  height: 29vh;
+  background-color: #3949AB;
 
   display: flex;
   align-items: center;
@@ -84,6 +92,10 @@ nav.side_bar > ul.nav_choose_pen li {
 
 
 /*//// PAINT ZONE ////*/
+section:hover
+{
+  cursor: crosshair;
+}
 section.paint_div
 {
     padding: 0 0 0 5.8rem;
@@ -100,5 +112,5 @@ section.paint_div > div.paint_line  div {
 }
 
 section.paint_div > div.paint_line  div:hover {
-  background-color: red!important;
+  background-color: rgba(0, 0, 0, 0.3)!important;
 }

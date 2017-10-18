@@ -2,8 +2,6 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 // CREATE DIV PAINT BLOC
-
-
 function  createSurface(line, column, size, bg_color)
 {
   let i = 1;
@@ -13,7 +11,7 @@ function  createSurface(line, column, size, bg_color)
     let y = 1;
     while(y <= column)
     {
-      $(".paint_line_num"+i).append("<div style></div>"); //create bloc colomn
+      $(".paint_line_num"+i).append("<div \"paint_column_num"+y+"\"></div>"); //create bloc colomn
       $(".paint_line_num"+i+" div").css('background-color', "#" + bg_color);
       $(".paint_line_num"+i+" div").css('width', size + "rem");
       $(".paint_line_num"+i+" div").css('height', size + "rem");
@@ -23,6 +21,16 @@ function  createSurface(line, column, size, bg_color)
   }
 }
 createSurface(22, 41, 2.2, 'e5e5e5');
+
+
+
+// ALGO
+
+
+
+
+
+
 
 
 
