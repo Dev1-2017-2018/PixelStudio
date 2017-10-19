@@ -54,7 +54,7 @@ nav.side_bar > ul.nav_choose_color {
   margin: 0;
   padding: 0;
   outline: 0;
-  height: 59vh;
+  height: 49vh;
   background-color: #3F51B5;
 
   display: flex;
@@ -68,6 +68,11 @@ nav.side_bar > ul.nav_choose_color li {
   border-radius: 25%;
   background-color: red;
 }
+nav.side_bar > ul.nav_choose_color li:nth-child(1) {background-color: #E91E63;}
+nav.side_bar > ul.nav_choose_color li:nth-child(2) {background-color: #F44336;}
+nav.side_bar > ul.nav_choose_color li:nth-child(3) {background-color: #9b59b6;}
+nav.side_bar > ul.nav_choose_color li:nth-child(4) {background-color: #03A9F4;}
+nav.side_bar > ul.nav_choose_color li:nth-child(5) {background-color: #009688;}
 /*Nav Option*/
 nav.side_bar > ul.nav_choose_pen {
   list-style: none;
@@ -75,7 +80,7 @@ nav.side_bar > ul.nav_choose_pen {
   margin: 0;
   padding: 0;
   outline: 0;
-  height: 29vh;
+  height: 39vh;
   background-color: #3949AB;
 
   display: flex;
@@ -87,9 +92,15 @@ nav.side_bar > ul.nav_choose_pen li {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 25%;
-  background-color: red;
+  background-color: #607D8B;
+  position: relative;
 }
-
+nav.side_bar > ul.nav_choose_pen li img  {
+  width: 1.5rem;
+  position: absolute;
+  top: .45rem;
+  left: .45rem;
+}
 
 /*//// PAINT ZONE ////*/
 section:hover
@@ -112,5 +123,5 @@ section.paint_div > div.paint_line  div {
 }
 
 section.paint_div > div.paint_line  div:hover {
-  background-color: rgba(0, 0, 0, 0.3)!important;
+  background-color: rgba(0, 0, 0, 0.1)!important;
 }
