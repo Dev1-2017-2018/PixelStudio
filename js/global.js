@@ -30,7 +30,41 @@ createSurface(22, 41, 2.2, 'fff');
 // SELECTION DU PEN1 DEFAULT
 pen1();
 // COLOR DEFAULT
-let color = "blue";
+let color = "#E91E63";
+
+// COLOR
+$( ".nav_choose_color li:nth-child(1)" )
+  .click(function()
+  {
+    return color = "#E91E63";
+  })
+$( ".nav_choose_color li:nth-child(2)" )
+  .click(function()
+  {
+    return color = "#F44336";
+  })
+$( ".nav_choose_color li:nth-child(3)" )
+  .click(function()
+  {
+    return color = "#9b59b6";
+  })
+$( ".nav_choose_color li:nth-child(4)" )
+  .click(function()
+  {
+    return color = "#03A9F4";
+  })
+$( ".nav_choose_color li:nth-child(5)" )
+  .click(function()
+  {
+    return color = "#009688";
+  })
+
+
+
+
+
+
+
 
 
 // EVENT CLICK IN PAINT ZONE
@@ -46,7 +80,6 @@ function pen1()
         $( this ).css('background-color', color);
       })
     .click(function() {
-        console.log("PEN 1");
         $( this ).css('background-color', color);
       })
     })
@@ -77,8 +110,6 @@ function pen2()
         }
       })
     .click(function() {
-        console.log("PEN 2")
-
         let i = 0;
         while(i < 2)
         {
@@ -119,11 +150,6 @@ $( "#icon_pen2" ).click(function(){
   color = "blue";
   pen2();
 })
-
-
-
-
-
 
 // EVENT CLICK IN PAINT ZONE
 
