@@ -60,13 +60,6 @@ $( ".nav_choose_color li:nth-child(5)" )
   })
 
 
-
-
-
-
-
-
-
 // EVENT CLICK IN PAINT ZONE
 function pen1()
 {
@@ -143,15 +136,72 @@ function rubber(){
 $( "#icon_rubber" ).click(function() { rubber(); })
 
 $( "#icon_pen1" ).click(function(){
-  color = "blue";
+  color = "#E91E63";
   pen1();
 })
 $( "#icon_pen2" ).click(function(){
-  color = "blue";
+  color = "#E91E63";
   pen2();
 })
 
-// EVENT CLICK IN PAINT ZONE
+
+
+
+
+
+
+// BONUS
+$( ".logo" ).click(function(){
+  $("#217").css('background-color', "#E91E63");
+  $("#218").css('background-color', "#E91E63");
+  $("#219").css('background-color', "#E91E63");
+  $("#220").css('background-color', "#E91E63");
+  $("#221").css('background-color', "#E91E63");
+  $("#257").css('background-color', "#E91E63");
+  $("#258").css('background-color', "#E91E63");
+  $("#259").css('background-color', "#E91E63");
+  $("#260").css('background-color', "#E91E63");
+  $("#261").css('background-color', "#E91E63");
+  $("#262").css('background-color', "#E91E63");
+  $("#263").css('background-color', "#E91E63");
+  $("#264").css('background-color', "#E91E63");
+  $("#265").css('background-color', "#E91E63");
+
+  $("#298").css('background-color', "#F44336");
+  $("#299").css('background-color', "#F44336");
+  $("#300").css('background-color', "#F44336");
+  $("#301").css('background-color', "#9b59b6");
+  $("#302").css('background-color', "#009688");
+  $("#303").css('background-color', "#9b59b6");
+
+  $("#338").css('background-color', "#F44336");
+  $("#339").css('background-color', "#9b59b6");
+  $("#340").css('background-color', "#F44336");
+  $("#341").css('background-color', "#9b59b6");
+  $("#342").css('background-color', "#9b59b6");
+  $("#343").css('background-color', "#009688");
+  $("#344").css('background-color', "#9b59b6");
+  $("#344").css('background-color', "#9b59b6");
+  $("#344").css('background-color', "#9b59b6");
+  $("#345").css('background-color', "#9b59b6");
+
+  $("#379").css('background-color', "#F44336");
+  $("#380").css('background-color', "#9b59b6");
+  $("#381").css('background-color', "#F44336");
+  $("#382").css('background-color', "#F44336");
+  $("#383").css('background-color', "#9b59b6");
+  $("#384").css('background-color', "#9b59b6");
+  $("#385").css('background-color', "#9b59b6");
+  $("#386").css('background-color', "#F44336");
+  $("#387").css('background-color', "#9b59b6");
+  $("#388").css('background-color', "#9b59b6");
+  $("#389").css('background-color', "#9b59b6");
+
+
+
+
+  pen2();
+})
 
 
 
