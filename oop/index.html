@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>P I X E L S T U D I O</title>
+	<link rel="stylesheet" href="css/pixel_studio.css">
+</head>
+
+<body>
+
+	<div id="zone_dessin"></div>
+
+	<div id="palette">
+		<ul id="tools">
+			<li></li>
+		</ul>
+		<ul id="colors">
+		</ul>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="app/pixel_studio.js"></script>
+	<script src="app/canvas.class.js"></script>
+	<script src="app/drawing_tool.class.js"></script>
+	<script src="app/tool.class.js"></script>
+	<script src="app/tool.pencil.class.js"></script>
+	<script src="app/tool.marker.class.js"></script>
+	<script src="app/tool.erase.class.js"></script>
+	<script src="app/color_selector.class.js"></script>
+	<script>
+		let pixel_studio;
+
+		$(function() {
+			const config = {
+				nb_pixel_width: 20,
+				colors: ['#E7BDDF', '#D593D4', '#C0E3C1', '#8AA58B', '#91FF96', '#000000']
+			}
+
+			pixel_studio = new Pixel_studio(config);
+		});
+	</script>
+</body>
+
+</html>
